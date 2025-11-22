@@ -1,8 +1,8 @@
-# Modeling Excess Cardiovascular Mortality During Extreme Heat in Chicago (2010–2022)
+# Modeling Excess Cardiovascular Mortality During Extreme Heat in Chicago (2011–2022)
 
 This repository contains all analytic code, data processing scripts, and derived datasets used in our study examining how extreme heat affects cardiovascular disease (CVD) mortality across Chicago community areas from 2010–2022. The project integrates mortality records, high-resolution temperature and humidity data, ACS sociodemographic estimates, and several environmental exposures (PM₂.₅, NO₂, NDVI) to generate multi-scale mortality models and community-specific heat thresholds.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ### Data (CSV / GeoJSON)
 These files are cleaned, analysis-ready datasets used to build annual, monthly, weekly, and daily modeling panels.
@@ -19,7 +19,7 @@ These files are cleaned, analysis-ready datasets used to build annual, monthly, 
 | **no2_county_year.csv / pm25_county_year.csv** | CONUS county-year pollutant datasets for cross-validation and sensitivity analyses. |
 | **ndvi_year_ca.csv** | Community-area NDVI (vegetation greenness) time-series. |
 
-## 🧰 Code
+## Code
 
 ### Main Analysis Pipeline
 - **run_heat_cvd_all_scales.r**  
@@ -34,7 +34,7 @@ These files are cleaned, analysis-ready datasets used to build annual, monthly, 
 - **ndvi_download.r / ndvi_download_agg.r**  
   Scripts to download, mosaic, aggregate, and extract NDVI for each community area.
 
-## 🔬 Analytic Overview
+## Analytic Overview
 
 This project constructs a high-resolution, longitudinal dataset integrating:
 
@@ -63,7 +63,7 @@ This project constructs a high-resolution, longitudinal dataset integrating:
 - Excess mortality estimation under observed vs counterfactual (non-heat) scenarios  
 - Sensitivity analyses excluding COVID years  
 
-## 📊 Outputs
+## Outputs
 
 Running the pipeline produces:
 
@@ -74,7 +74,7 @@ Running the pipeline produces:
 - Sensitivity analyses (e.g., excluding COVID, alternative lag structures)  
 - Cleaned and reproducible analytic panels  
 
-## 🚀 Reproducibility
+## Reproducibility
 
 To run the entire analysis:
 
@@ -85,17 +85,17 @@ source("run_heat_cvd_all_scales.r")
 Required R packages include:  
 `tidyverse`, `sf`, `mgcv`, `data.table`, `tmap`, `lubridate`, `vroom`, and others listed at the top of the master script.
 
-## 🔍 Citation
+## Citation
 
 If you use this repository, please cite:
 
-**Graffy P., et al. Modeling Excess Cardiovascular Mortality During Extreme Heat Across Chicago Community Areas, 2010–2022.**  
+**Graffy P., et al. Modeling Excess Cardiovascular Mortality During Extreme Heat Across Chicago Community Areas, 2011–2022.**  
 *Manuscript in preparation.*
 
-## 📫 Contact
+## Contact
 
 For questions or collaboration requests:
 
 **Peter Graffy, PhD, MPH**  
 University of Chicago  
-🌐 https://petergraffy.github.io/
+https://petergraffy.github.io/
